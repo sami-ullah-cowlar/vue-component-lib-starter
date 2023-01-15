@@ -1,5 +1,5 @@
 {
-  "name": "my-lib",
+  "name": "lilith-vue-starter-lib",
   "version": "0.0.0",
   "scripts": {
     "build": "rimraf dist && vue-tsc && vite build",
@@ -32,10 +32,10 @@
     "dist"
   ],
   "types": "./dist/types/index.d.ts",
-  "module": "./dist/my-lib.es.js",
+  "module": "./dist/lilith-vue-starter-lib.es.js",
   "exports": {
     ".": {
-      "import": "./dist/my-lib.es.js"
+      "import": "./dist/lilith-vue-starter-lib.es.js"
     },
     "./dist/style.css": "./dist/style.css"
   }

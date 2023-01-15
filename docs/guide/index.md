@@ -2,13 +2,17 @@
 
 You may add the usage of the library here.
 
-> If you remove Component B and the [PrimeFaces](https://www.primefaces.org/) (PrimeVue, PrimeIcons and PrimeFlex) dependencies from your library, the setup related to PrimeFaces won't be needed from the guide below.
+> If you remove Component B and the [PrimeFaces](https://www.primefaces.org/)
+> (PrimeVue, PrimeIcons and PrimeFlex) dependencies from your library, the setup
+> related to PrimeFaces won't be needed from the guide below.
 
 ## Setup
 
-This setup assumes your client app is created with Vite and vue-ts template, and you use 'npm link' to link to `my-lib` locally.
+This setup assumes your client app is created with Vite and vue-ts template, and
+you use 'npm link' to link to `lilith-vue-starter-lib` locally.
 
-In your `package.json`, you shall have the dependencies compatible with the following:
+In your `package.json`, you shall have the dependencies compatible with the
+following:
 
 ```json
 "dependencies": {
@@ -24,7 +28,7 @@ In your `vite.config.ts`, you shall configure to dedupe `vue`:
 ```ts
 export default defineConfig({
   resolve: {
-    dedupe: ['vue'],
+    dedupe: ["vue"],
   },
 });
 ```
@@ -32,18 +36,18 @@ export default defineConfig({
 In your `main.ts`, you shall import the libraries and CSS:
 
 ```ts
-import 'primevue/resources/themes/saga-blue/theme.css';
-import 'primevue/resources/primevue.min.css';
-import 'primeicons/primeicons.css';
-import 'primeflex/primeflex.css';
+import "primevue/resources/themes/saga-blue/theme.css";
+import "primevue/resources/primevue.min.css";
+import "primeicons/primeicons.css";
+import "primeflex/primeflex.css";
 
-import 'my-lib/dist/style.css';
+import "lilith-vue-starter-lib/dist/style.css";
 ```
 
 Import components from this library in your own component:
 
 ```html
 <script setup lang="ts">
-  import { ComponentA, ComponentB } from 'my-lib';
+  import { ComponentA, ComponentB } from 'lilith-vue-starter-lib';
 </script>
 ```
