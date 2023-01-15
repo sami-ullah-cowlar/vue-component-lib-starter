@@ -13,5 +13,7 @@ import './assets/main.scss'
 export default { install }
 
 export * from './components'
+
 export * from './constants'
+
 export * from './utils'
