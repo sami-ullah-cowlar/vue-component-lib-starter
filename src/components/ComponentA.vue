@@ -1,6 +1,7 @@
 <script setup lang="ts">
-interface Props {
-  msg: string
+export interface Props {
+  msg: string;
+  luckyNumber: number;
 }
 
 const props = defineProps<Props>()
